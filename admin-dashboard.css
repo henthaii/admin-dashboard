@@ -9,6 +9,8 @@
     display:grid;
     grid-column: 1 / 2;
     grid-row: 1 / 6;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
 
 .header {
@@ -25,6 +27,37 @@
     grid-row: 2 / 6;
 }
 
+.dashboard {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+
+}
+
+.dashboard > img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.topmenu {
+    display:grid;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+
+.settings {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 6 / 8;
+}
+
 .sidebar > {
     display:grid;
+}
+
+
+
+.sidebar > * > img {
+    height: 20px;
+    width: auto;
 }
