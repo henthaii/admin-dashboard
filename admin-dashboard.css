@@ -29,7 +29,8 @@
 
 .dashboard {
     display: grid;
-    grid-column: 1 / 4;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1 / 5;
     grid-row: 1 / 2;
 
 }
@@ -37,12 +38,37 @@
 .dashboard > img {
     grid-column: 1/2;
     grid-row: 1/2;
+    padding: 10px;
+}
+
+.dashboard > p {
+    color: white;
 }
 
 .topmenu {
     display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
     grid-column: 1 / 4;
     grid-row: 3 / 4;
+}
+
+.topmenu > {
+    display:grid;
+    padding: 10px;
+}
+
+.topmenu > * > img {
+    height: 20px;
+    width: auto;
+    padding: 10px;
+    grid-column: 1 / 2;
+}
+
+.topmenu > * > p {
+    color:white;
+    grid-column: 2 / 4;
+    
 }
 
 .settings {
