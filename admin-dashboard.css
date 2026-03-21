@@ -30,11 +30,11 @@
 .dashboard {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column: 1 / 2;
+    grid-column: 1 / 5;
     grid-row: 1 / 2;
 }
 
-.dashboard > img, .topmenu > * > img {
+.dashboard > img , .topmenu > * > img , .botmenu > * > img {
     height: 20px;
     width: auto;
     grid-column: 1/2;
@@ -48,7 +48,7 @@
 
 .topmenu {
     display:grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(6,1fr);
     grid-column: 1 / 5;
     grid-row: 3 / 8;
@@ -59,14 +59,14 @@
     padding: 10px;
 } */
 
-.topmenu > * > img {
+/* .topmenu > * > img {
     height: 20px;
     width: auto;
     padding: 10px;
     grid-column: 1 / 2;
-}
+} */
 
-.topmenu > * > p {
+.topmenu > * > p , .botmenu > * > p {
     color:white;
     grid-column: 2 / 3;
 }
@@ -108,8 +108,28 @@
     grid-template-columns: repeat(2,1fr);
 }
 
-.settings {
+.botmenu {
     display: grid;
-    grid-column: 1 / 4;
-    grid-row: 6 / 8;
+    grid-column: 1 / 5;
+    grid-row: 9 / 12;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.settings {
+    grid-row: 1 / 2;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.support {
+    grid-row: 2 / 3;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.privacy {
+    grid-row: 3 / 4;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
 }
